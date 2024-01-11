@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="shortcut icon" href="assets/img/icono/escudo.ico" type="image/vnd.microsoft.icon" />
+    <title>Clasificación</title>
+</head>
+<body>
+    <!--ENCABEZADO-->
+    <header class="col-12">
+        <img src="assets/img/logo/logo-mallorca.png" alt="imagen logo mallorca" />
+        <div class="bothead">
+            <a href="galeriaTienda.html" class="tienda">Tienda</a>
+            <a href="formularioSocios.html" class="socio">Quiero ser abonado</a>
+        </div>
+    </header>
+
+    <!--MENÚ HORIZONTAL FIJO EN LA PARTE SUPERIOR-->
+    <div class="navbar">
+        <ul>
+            <li class="drop">
+                <a href="index.html" class="dropbtn">RCDMallorca</a>
+                <div class="drop-content">
+                    <a href="#historia">Nuestra historia</a>
+                    <a href="#instalaciones">Instalaciones</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </li>
+            <li class="drop">
+                <a href="galeriaJugadores.html" class="dropbtn">Plantilla</a>
+                <div class="drop-content">
+                    <a href="#entrenador">Entrenador</a>
+                    <a href="#porteros">Porteros</a>
+                    <a href="#defensas">Defensas</a>
+                    <a href="#mediocentros">Centrocampistas</a>
+                    <a href="#delanteros">Delanteros</a>
+                </div>
+            </li>
+            <li class="drop">
+                <a href="horarioPartidos.html" class="dropbtn">Partidos</a>
+                <div class="drop-content">
+                    <a href="horarioPartidos.html">Temporada</a>
+                    <a href="clasificacion.html">Clasificación</a>
+                </div>
+            </li>
+            <li class="drop">
+                <a href="#" class="dropbtn">FútbolBase</a>
+                <div class="drop-content">
+                    <a href="#">Mallorca B</a>
+                    <a href="#">Juveniles</a>
+                    <a href="#">Cadetes</a>
+                    <a href="#">Infantiles</a>
+                    <a href="#">Alevines</a>
+                </div>
+            </li>
+            <li class="drop"><a href="#">Noticias</a></li>
+            <div class="botnav">
+                <a href="galeriaTienda.html" class="tienda">Tienda</a>
+                <a href="formularioSocios.html" class="socio">Quiero ser abonado</a>
+            </div>
+        </ul>
+    </div>
+
+    <!--MENÚ LATERAL DESPLEGABLE (en este archivo solo aparece cuando el tamaño de la pantalla se reduce)-->
+    <div class="menulat">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="menu-btn"><p>Botón</p></label>
+  
+        <nav id="sidebar">
+            <a href="index.html" class="first">Inicio</a>
+            <a href="horarioPartidos.html">Partidos</a>
+            <a href="galeriaJugadores.html">Plantilla</a>
+            <a href="#">Futbol base</a>
+            <a href="#">Noticias</a>
+        </nav>
+    </div>
+
+    <!--DIVISOR DONDE SE ENCUENTRA EL CONTENIDO (la tabla)-->
+    <div class="contenidoPartidos">
+        <h1 style="margin-left: 5em">Partidos temporada 2022/2023</h1>
+        <div style="overflow-x: auto">
+            <table class="partidos">
+                <tr>
+                    <th>Posición</th>
+                    <th>Escudo</th>
+                    <th>Nombre</th>
+                    <th>PJ</th>
+                    <th>G</th>
+                    <th>E</th>
+                    <th>P</th>
+                    <th>PTS</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/128/Real-Madrid-icon.png" width="128" height="128">
+                    </td>
+                    <td>Real Madrid</td>
+                    <td>19</td>
+                    <td>15</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td>Girona</td>
+                    <td>19</td>
+                    <td>15</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/128/FC-Barcelona-icon.png" width="128" height="128">
+                    </td>
+                    <td>Barcelona</td>
+                    <td>19</td>
+                    <td>12</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>41</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/128/Athletic-Bilbao-icon.png" width="128" height="128">
+                    </td>
+                    <td>Athletic Club</td>
+                    <td>19</td>
+                    <td>11</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>38</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>
+                        <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/128/Atletico-Madrid-icon.png" width="128" height="128">
+                    </td>
+                    <td>Atlético de Madrid</td>
+                    <td>19</td>
+                    <td>12</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>38</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>
+                        <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/128/Real-Sociedad-icon.png" width="128" height="128">
+                    </td>
+                    <td>Real Sociedad</td>
+                    <td>19</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td></td>
+                    <td>Real Betis</td>
+                    <td>19</td>
+                    <td>6</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>
+                        <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/128/Getafe-icon.png" width="128" height="128">
+                    </td>
+                    <td>Getafe</td>
+                    <td>19</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>
+                        <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/128/Valencia-icon.png" width="128" height="128">
+                    </td>
+                    <td>Valencia</td>
+                    <td>19</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>
+                        <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/128/UD-Las-Palmas-icon.png" width="128" height="128">
+                    </td>
+                    <td>Las Palmas</td>
+                    <td>19</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>
+                        <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/128/Rayo-Vallecano-icon.png" width="128" height="128">
+                    </td>
+                    <td>Rayo Vallecano</td>
+                    <td>19</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td></td>
+                    <td>Osasuna</td>
+                    <td>19</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td></td>
+                    <td>Villarreal</td>
+                    <td>19</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>
+                        <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/128/Real-Mallorca-icon.png" width="128" height="128">
+                    </td>
+                    <td>Mallorca</td>
+                    <td>19</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>7</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>
+                        <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/128/Deportivo-Alaves-icon.png" width="128" height="128">
+                    </td>
+                    <td>Alavés</td>
+                    <td>19</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>
+                        <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/128/Sevilla-icon.png" width="128" height="128">
+                    </td>
+                    <td>Sevilla</td>
+                    <td>19</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>
+                        <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/128/Celta-de-Vigo-icon.png" width="128" height="128">
+                    </td>
+                    <td>Celta de Vigo</td>
+                    <td>19</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td></td>
+                    <td>Cádiz</td>
+                    <td>19</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td></td>
+                    <td>Granada</td>
+                    <td>19</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>12</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td></td>
+                    <td>Almería</td>
+                    <td>19</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>14</td>
+                    <td>5</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
