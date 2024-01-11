@@ -416,12 +416,6 @@ div.galeriatienda img.detras:hover {
 
 /*Estilos para cuando el ancho de la pantalla es inferior a 900px*/
 @media only screen and (max-width: 900px) {
-  .contenido {
-    font-size: 0.7em;
-    display: flex;
-    margin: 5em 5em 2em 8em;
-    flex-direction: column;
-  }
   /*El menú horizontal fijo de la parte superior desaparece*/
   .navbar {
     display: none;
