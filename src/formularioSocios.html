@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/estilosForm.css" />
+    <link rel="shortcut icon" href="Imágenes/escudo.ico" type="image/vnd.microsoft.icon" />
+    <title>Hazte abonado</title>
+</head>
+<body>
+    <!--BOTÓN QUE LLEVA A LA PÁGINA PRINCIPAL-->
+    <a href="index.html" class="volver">volver a inicio</a>
+
+    <!--DIVISOR DONDE SE ENCUENTRA EL CONTENIDO (formulario)-->
+    <div class="contenedor">
+        <h1>NUEVO ABONADO</h1>
+        <form> <!-- action="#" method="post" -->
+            <!--Input del nombre-->
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required />
+            <!--Input de los apellidos-->
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellido" required />
+            <!--Input del email-->
+            <label for="email">e-mail</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required />
+            <!--Input tipo select de la zona de abono-->
+            <label for="zona">Zona de abono</label>
+            <select name="zona" id="zona" required>
+                <option value="te">Tribuna este</option>
+                <option value="fs">Fondo sur</option>
+                <option value="fn">Fondo norte</option>
+                <option value="zc">Zona cubierta</option>
+                <option value="zd">Zona descubierta</option>
+                <option value="to">Tribuna oeste</option>
+            </select>
+            <!--Input tipo fecha de la fecha de nacimiento-->
+            <label for="f_nac">Fecha de Nacimiento</label>
+            <input type="date" name="f_nac" id="f_nac" required />
+            <!--Input tipo checkbox-->
+            <div class="check">
+                <input type="checkbox" name="info" id="info" value="ok" />
+                <p style="display: inline">He leído y acepto la <a href="#">política de privacidad</a></p>
+            </div>
+            <!--Botones reset y submit-->
+            <div class="botones">
+                <input type="submit" value="Hecho" />
+                <input type="reset" value="Limpiar" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

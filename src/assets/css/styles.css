@@ -1,0 +1,653 @@
+/*ESTILOS GENERALES PARA TODAS LOS ARCHIVOS*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  margin-bottom: 1em;
+}
+/*Esto hace que se tenga en cuenta el header y el menu horizontal a la hora de hacer scroll 
+cuando la página te lleva a otra parte de esta*/
+html {
+  scroll-behavior: smooth;
+}
+:target {
+  scroll-margin-top: 4.5em;
+}
+
+/*BARRA DE NAVEGACIÓN (MENÚ HORIZONTAL FIJO). Se aplica en el Principal, HorariosPartidos y GaleríaJugadores*/
+.navbar ul {
+  position: fixed;
+  top: 3.5em;
+  width: 100%;
+  background-color: black;
+  z-index: 100;
+  list-style: none;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.navbar li {
+  float: left;
+  width: 10%;
+}
+.navbar li a,
+.dropbtn {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+.navbar li a:hover,
+.drop:hover .dropbtn {
+  background-color: rgb(175, 1, 1);
+}
+.navbar li.drop {
+  display: block;
+}
+.drop-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 13%;
+  z-index: 1;
+  background-color: black;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.drop-content a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 1em;
+}
+.drop-content a:hover {
+  background-color: rgb(175, 1, 1);
+}
+.drop:hover .drop-content {
+  display: block;
+  animation-name: subnavbar;
+  animation-duration: 1s;
+}
+/*Animación que hace aparecer los submenus del menú horizontal fijo*/
+@keyframes subnavbar {
+  from {
+    opacity: 0;
+    background-color: red;
+  }
+  to {
+    opacity: 1;
+    background-color: black;
+  }
+}
+/*Estilos para los botones de Tienda y Formulario Abonados que se encuentran en el menú horizontal fijo superior*/
+div.botnav {
+  float: left;
+}
+div.botnav a {
+  color: black;
+  font-size: 1.1em;
+  display: inline-block;
+  text-decoration: none;
+  background-color: yellow;
+  padding: 0.5em;
+  margin: 0.3em 0em 0.2em 0em;
+  border-radius: 100px;
+}
+div.botnav a:hover {
+  background-color: #fdbc01;
+}
+div.botnav a:active {
+  transform: scale(0.9, 0.9);
+}
+div.botnav a.tienda {
+  margin-left: 20em;
+  background-image: url(../img/carrito\ bl.png);
+  background-repeat: no-repeat;
+  background-position: 0.2em;
+  padding-left: 1.8em;
+}
+div.botnav a.tienda:hover {
+  background-image: url(../img/carrito\ ng.png);
+  background-repeat: no-repeat;
+  background-position: 0.2em;
+}
+div.botnav a.socio {
+  margin-left: 2em;
+}
+div.bothead {
+  display: none;
+}
+
+/*Estilos para trabajar con Gridview y hacer que la página sea "responsive"*/
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+/*Estilos para un header fijo que se encuentra arriba del menú horizontal fijo*/
+header {
+  position: fixed;
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+  background-color: red;
+  height: 3.5em;
+}
+
+/*ESTILOS PARA LA PÁGINA PRINCIPAL*/
+
+/*Utilizo Gridview y Flex box para hacer que la página sea responsive. El contenido se dividirá en dos columnas, la principal
+de un ancho del 66.66% y la columna de la derecha un ancho de 25%*/
+.contenido {
+  display: flex;
+  margin: 0em 5em 0em 8em;
+  flex-direction: row;
+}
+.principal {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  padding: 2em;
+  border-radius: 10px;
+}
+.principal div {
+  margin-bottom: 2em;
+}
+.principal div h1 {
+  margin-bottom: 0.5em;
+}
+.principal h3 {
+  color: red;
+  margin-top: 0.7em;
+  margin-bottom: 1em;
+}
+.principal img {
+  margin-bottom: 0.5em;
+}
+.lateraldcha {
+  display: flex;
+  flex-direction: column;
+}
+.lateraldcha div.Redes {
+  background-color: white;
+  height: 250px;
+  padding: 1em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+}
+.lateraldcha div.Patrocinadores {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: auto;
+  padding: 1em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+}
+.lateraldcha div.Patrocinadores h3 {
+  margin-bottom: 1em;
+}
+.lateraldcha div.Patrocinadores div.imagenes {
+  display: flex;
+  flex-direction: row;
+}
+.lateraldcha div.Patrocinadores div img {
+  margin: 0.4em;
+  width: 80%;
+  height: 65%;
+  object-fit: fill;
+}
+.lateraldcha div.Videos {
+  background-color: white;
+  margin-bottom: 5em;
+}
+.lateraldcha div.Redes p {
+  padding: 1em 0em 1em 4em;
+}
+p.twitter {
+  background-image: url(Imágenes/icons8-twitter.gif);
+  background-repeat: no-repeat;
+  background-position: 0.5em;
+}
+p.youtube {
+  background-image: url(Imágenes/icons8-youtube-40.png);
+  background-repeat: no-repeat;
+  background-position: 0.5em;
+}
+p.instagram {
+  background-image: url(Imágenes/icons8-instagram-40.png);
+  background-repeat: no-repeat;
+  background-position: 0.5em;
+}
+.cont a {
+  color: red;
+}
+.cont a:hover {
+  color: orange;
+}
+.cont h3 {
+  color: black;
+}
+
+/*ESTILOS PARA LA GALERÍA DE IMÁGENES DE LOS JUGADORES*/
+
+/*La galería de imágenes de los jugadores de la plantilla está hecha con "object-fit" 250px * 250px y con texto debajo.
+El posicionamiento al ser tipo float ya hace que sea responsive, ya que cuando disminuye el ancho de la pantalla las imágenes 
+llenan la fila y si no hay más espacio pasan a la siguiente. También tienen un efecto para cuando se pasa el ratón por encima
+que las hace aumentar un poco de tamaño*/
+div.contenidoGJ {
+  padding-top: 9em;
+  margin: 0 5em 2em 5em;
+}
+div.contenidoGJ h2 {
+  color: red;
+  border-bottom: 1px solid red;
+}
+div.galeria {
+  margin: 1.2em;
+  border: 1px solid #ccc;
+  float: left;
+}
+div.galeria img {
+  width: 250px;
+  height: 250px;
+  object-fit: fill;
+  border-radius: 10px;
+}
+div.galeria:hover {
+  animation-name: aumentoimagenes;
+  animation-duration: 0.7s;
+  transform: scale(1.1, 1.1);
+}
+/*Esta es la animación que hace aumentar las imágenes un 10% su tamaño*/
+@keyframes aumentoimagenes {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.1, 1.1);
+  }
+}
+div.desc {
+  padding: 0.5em 0.5em 0.1em 0.5em;
+  text-align: left;
+  color: white;
+  border-radius: 10px;
+}
+
+/*ESTILOS PARA LA TABLA DE LOS PARTIDOS*/
+
+/*El archivo de los HorariosPartidos contiene la tabla. Detrás de la tabla hay dos "background-images." La tabla es responsive
+ya que el ancho está determinado por porcentaje, por lo que al disminuir el ancho, la tabla lo hace en proporción.
+Las filas impares son de color rojo y las pares de color negro.*/
+div.contenidoPartidos {
+  padding-top: 9em;
+  background-image: url(Imágenes/estadio3.jpg), url(Imágenes/equipo.jpeg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0em 0em, -8em 45em;
+}
+table.partidos {
+  margin: 2em 10% 1em 10%;
+  width: 80%;
+  opacity: 0.8;
+}
+th {
+  padding: 0.7em;
+  background-color: yellow;
+  color: black;
+}
+td {
+  padding: 0.5em;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: red;
+}
+tr:nth-child(odd) {
+  background-color: black;
+}
+
+table.partidos,
+th,
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+/*ESTILOS PARA LA GALERÍA DE IMÁGENES DE LA TIENDA*/
+
+/*Al igual que la galería de imágenes de los jugadores, la galería de imágenes de la tienda está hecha con object-fit, aunque
+esta vez algo más pequeño y sin texto debajo. La peculiaridad de esta galería es que he puesto en cada div.galeriatienda dos
+imágenes superpuestas pero con opacidades diferentes. Entonces cuando se pasa el ratón por encima la imagen que estaba oculta
+aparece. Este archivo no cuenta con el menú horizontal fijo en la parte superior, y he puesto un menú vertical lateral desplegable.
+También usa float por lo que es responsive.*/
+div.contenidotienda {
+  padding-top: 9em;
+  margin: 0 5em 2em 5em;
+}
+div.contenidotienda h2 {
+  color: red;
+  border-bottom: 1px solid red;
+}
+div.galeriatienda {
+  border: 1px solid white;
+  margin: 3em;
+  position: relative;
+  display: inline-block;
+}
+div.galeriatienda:hover {
+  border: 1px solid black;
+}
+div.galeriatienda img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1.9em;
+  width: 175px;
+  height: 215px;
+  object-fit: fill;
+  transition: opacity 0.5s ease-in-out;
+}
+div.galeriatienda img.detras {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin: 1.9em;
+  width: 175px;
+  height: 215px;
+  object-fit: fill;
+  opacity: 0;
+}
+div.galeriatienda img.detras:hover {
+  animation-name: aparecer;
+  animation-duration: 0.5s;
+  opacity: 1;
+}
+/*Animación que hace aparecer la imagen que estaba oculta*/
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*MEDIA QUERIES*/
+
+/*Estilos para cuando el ancho de la pantalla es inferior a 900px*/
+@media only screen and (max-width: 900px) {
+  /*El menú horizontal fijo de la parte superior desaparece*/
+  .navbar {
+    display: none;
+  }
+  /*Y el defecto de el menú superior fijo aparece el menú lateral ocultable en la parte izquierda. Usa un input type checkbox
+    para desplegarse u ocultarse. Lo que he hecho ha sido jugar un poco con las posiciones de los elementos para que se muestre donde
+    siempre pegado a la esquina superior izquierda. He usado porcentajes para la posición para que así sea funcional aunque varíe un
+    poco el ancho de la pantalla. Al menú lateral de la tienda lo tuve que nombrar de otra manera porque tenía alguna particularidad,
+    por eso diferencio entre sidebar y sidebar_ti*/
+  #menu-toggle {
+    display: none;
+  }
+  #menu-toggle:checked ~ #sidebar,
+  #menu-toggle_ti:checked ~ #sidebar_ti {
+    transform: translateX(0);
+  }
+  #sidebar,
+  #sidebar_ti {
+    position: fixed;
+    z-index: 998;
+    top: 7.9%;
+    left: -4%;
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-100%);
+    opacity: 0.8;
+  }
+  #sidebar a,
+  #sidebar_ti a {
+    display: block;
+    color: white;
+    padding: 1em 1em 1em 2.5em;
+    text-decoration: none;
+  }
+  #sidebar a.first,
+  #sidebar_ti a.first {
+    margin-top: 2em;
+  }
+  #sidebar a:hover,
+  #sidebar_ti a:hover {
+    background-image: url(Imágenes/icons8-vertical-line-40.png);
+    background-repeat: no-repeat;
+    background-position: 0.1em;
+  }
+  #sidebar a:active,
+  #sidebar_ti a:active {
+    transform: scale(0.95, 0.95);
+  }
+  #menu-btn,
+  #menu-btn-ti {
+    background-image: url(Imágenes/icons8-menu-rounded-32.png);
+    background-repeat: no-repeat;
+    background-position: 80%;
+    display: block;
+    z-index: 999;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    position: fixed;
+    width: 99%;
+    top: 8.2%;
+    left: -73%;
+    transition: transform 0.5s ease-in-out;
+    transition-delay: 0.1s;
+  }
+  #menu-btn p,
+  #menu-btn-ti p {
+    opacity: 0;
+  }
+  /*Esto cambia la posición y la imagen del botón del menú lateral cuando está desplegado*/
+  #menu-toggle:checked ~ #menu-btn,
+  #menu-toggle_ti:checked ~ #menu-btn-ti {
+    transform: translateX(25%);
+  }
+  #menu-toggle:checked ~ #menu-btn,
+  #menu-toggle_ti:checked ~ #menu-btn-ti {
+    background-image: url(Imágenes/icons8-back-arrow-32.png);
+    background-repeat: no-repeat;
+    background-position: 80%;
+  }
+
+  /*Otros cambios para que sea responsive*/
+  div.contenido,
+  div.contenidoPartidos {
+    padding-top: 6em;
+  }
+  div.contenidoGJ,
+  div.contenidotienda {
+    padding-top: 6em;
+    margin: 0 5em 2em 5em;
+  }
+  /*Cuando el ancho de la pantalla disminuye todas las columnas son del 100% del ancho, hace que todo se disponga de forma vertical
+    en vez de en diferentes columnas*/
+  [class*='col-'] {
+    width: 100%;
+  }
+  /*En el contenido de la página principal usaba flex box y tenía dos columnas(flex direction: row), ahora cuando la pantalla 
+    es más pequeña la disposición de todos los elementos es en columnas*/
+  .contenido {
+    font-size: 0.7em;
+    display: flex;
+    margin: 0em 5em 2em 8em;
+    flex-direction: column;
+  }
+}
+
+/*Estilos para cuando el ancho de la pantalla es Superior a 900px:
+La galería de imágenes de la tienda solo tiene menú lateral y no menú horizontal en la parte superior, por lo que al menú lateral
+también hay que darle estilo cuando la pantalla es más ancha de 900px. Lo único que cambia son las posiciones de los elementos*/
+@media only screen and (min-width: 900px) {
+  #menu-toggle_ti {
+    display: none;
+  }
+  #menu-toggle_ti:checked ~ #sidebar_ti {
+    transform: translateX(0);
+  }
+  #sidebar_ti {
+    position: fixed;
+    z-index: 998;
+    top: 3.5em;
+    left: -1em;
+    width: 12%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-250px);
+    opacity: 0.8;
+  }
+  #sidebar_ti a {
+    display: block;
+    color: white;
+    padding: 1em 1em 1em 2.5em;
+    text-decoration: none;
+  }
+  #sidebar_ti a.first {
+    margin-top: 2em;
+  }
+  #sidebar_ti a:hover {
+    background-image: url(Imágenes/icons8-vertical-line-40.png);
+    background-repeat: no-repeat;
+    background-position: 0.1em;
+  }
+  #sidebar_ti a:active {
+    transform: scale(0.95, 0.95);
+  }
+  #menu-btn-ti {
+    background-image: url(Imágenes/icons8-menu-rounded-32.png);
+    background-repeat: no-repeat;
+    background-position: 13em;
+    display: block;
+    z-index: 999;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    position: fixed;
+    width: 20%;
+    top: 3.7em;
+    left: -12.5em;
+    transition: transform 0.5s ease-in-out;
+    transition-delay: 0.1s;
+  }
+  #menu-btn-ti p {
+    opacity: 0;
+  }
+  #menu-toggle_ti:checked ~ #menu-btn-ti {
+    transform: translateX(7em);
+  }
+  #menu-toggle_ti:checked ~ #menu-btn-ti {
+    background-image: url(Imágenes/icons8-back-arrow-32.png);
+    background-repeat: no-repeat;
+    background-position: 13em;
+  }
+  /*Otros cambios*/
+  div.contenido,
+  div.contenidoPartidos {
+    padding-top: 5em;
+  }
+  div.contenidoGJ,
+  div.contenidotienda {
+    padding-top: 6em;
+    margin: 0 5em 0em 5em;
+  }
+}
+
+/*Estilos para cuando el ancho de la pantalla es inferior a 1350px*/
+@media only screen and (max-width: 1350px) {
+  /*Los botones que incluí en el menú horizontal fijo de la parte superior de "tienda" y "quiero ser abonad" daban problemas con su 
+posicionamiento al disminuir la pantalla, por lo que cree unos botones iguales en el "header" que sustituyen a los del menú cuando
+la pantalla se reduce*/
+
+  /*Cambio de los botones*/
+  div.botnav {
+    display: none;
+  }
+  div.bothead {
+    display: block;
+    margin-left: 10%;
+    margin-top: 0.8em;
+  }
+  div.bothead a {
+    color: black;
+    font-size: 1em;
+    display: inline-block;
+    text-decoration: none;
+    background-color: yellow;
+    padding: 0.3em;
+    border-radius: 100px;
+  }
+  div.bothead a:hover {
+    background-color: #fdbc01;
+  }
+  div.bothead a:active {
+    transform: scale(0.9, 0.9);
+  }
+  div.bothead a.tienda {
+    background-image: url(../img/carrito\ bl.png);
+    background-repeat: no-repeat;
+    background-position: 0.2em;
+    padding-left: 1.8em;
+  }
+  div.bothead a.tienda:hover {
+    background-image: url(../img/carrito\ ng.png);
+    background-repeat: no-repeat;
+    background-position: 0.2em;
+  }
+  div.bothead a.socio {
+    margin-left: 1em;
+  }
+}

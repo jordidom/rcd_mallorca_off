@@ -1,0 +1,329 @@
+/*ESTILOS PARA EL FORMULARIO*/
+
+/*Como el diseño del formulario era un poco diferente decidí hacerlo en un archivo CSS separado
+Usa dos imágenes de fondo y una animación para cuando aparece el formulario. Los input tienen un estilo similar y luego he añadido
+algunas diferencias para que todo quede bien*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: red;
+  background-image: url(Imágenes/aficion.jpg), url(Imágenes/dimonioreal.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -25em 0em, 35em 0em;
+}
+a.volver {
+  position: relative;
+  margin-left: 3em;
+  margin-top: 1em;
+  display: inline-block;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 0.4em 0.4em 0.4em 2em;
+  background-image: url(Imágenes/icons8-back-arrow-30.png);
+  background-repeat: no-repeat;
+  background-position: 0.1em;
+}
+a.volver:hover {
+  color: red;
+}
+a.volver:active {
+  transform: scale(0.9, 0.9);
+}
+/*Animación que hace aparecer el formulario rotando desde la parte izquierda de la pantalla*/
+@keyframes aparecerfull {
+  from {
+    left: -100%;
+    background-color: red;
+    transform: rotate(0deg);
+  }
+  to {
+    left: 30%;
+    background-color: #fff;
+    transform: rotate(360deg);
+  }
+}
+
+/*Uso de media queries para que sea responsive*/
+@media only screen and (min-width: 900px) {
+  .contenedor {
+    position: relative;
+    width: 35%;
+    max-width: 1000px;
+    min-height: 680px;
+    background-color: #fff;
+    left: 30%;
+    right: 30%;
+    top: -2em;
+    border-radius: 10px;
+    padding: 1em 2em 1em 2em;
+    animation-name: aparecerfull;
+    animation-duration: 4s;
+  }
+  input {
+    padding: 0.6em;
+    margin: 0.3em 0 1.3em 0;
+    width: 95%;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border: 1px solid black;
+    outline: none;
+  }
+  select {
+    padding: 0.6em;
+    margin: 0.3em 0 1.5em 0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border: 1px solid black;
+    outline: none;
+  }
+  label {
+    font-size: 1.2em;
+    font-weight: 550;
+    color: rgb(93, 0, 0);
+  }
+  div.check {
+    background-color: #ccc;
+    padding: 1em 1em 0 1em;
+    margin-bottom: 1.3em;
+    border-radius: 10px;
+    border: none;
+  }
+  input[type='checkbox'] {
+    width: auto;
+    margin-right: 1em;
+  }
+  input[type='submit'] {
+    float: right;
+    padding: 0.7em;
+    background-color: #04aa6d;
+    border: none;
+    width: 30%;
+    color: white;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  input[type='reset'] {
+    float: left;
+    padding: 0.7em;
+    background-color: #ff3733;
+    border: none;
+    width: 30%;
+    color: white;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  input[type='submit']:hover {
+    background-color: #05794f;
+  }
+  input[type='reset']:hover {
+    background-color: red;
+  }
+  input[type='submit']:active,
+  input[type='reset']:active {
+    box-shadow: none;
+    transform: scale(0.9, 0.9);
+  }
+  input[type='text']:focus,
+  input[type='date']:focus,
+  input[type='email']:focus,
+  input[type='password']:focus,
+  select:focus {
+    animation-name: borde;
+    animation-duration: 0.3s;
+    border: 1px dashed red;
+  }
+  input[type='text']:hover,
+  input[type='date']:hover,
+  input[type='email']:hover,
+  input[type='password']:hover,
+  select:hover {
+    background-color: #fab9b9;
+  }
+  /*Animación para que cuando se clique sobre un imput aparezca un borde*/
+  @keyframes borde {
+    from {
+      border: 1px solid black;
+    }
+    to {
+      border: 1px dashed red;
+    }
+  }
+  p a {
+    color: red;
+    text-decoration: none;
+  }
+  p a:hover {
+    text-decoration: underline;
+  }
+  /*Esto lo he buscado en stack overflow. Lo que pasaba es que cuando el formulario autocompletaba uno de los campos
+cambiaba el color de fondo del input*/
+  input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+  input:-webkit-autofill:hover {
+    -webkit-box-shadow: 0 0 0px 1000px whitesmoke inset;
+  }
+}
+
+@keyframes aparecersmall {
+  from {
+    left: -100%;
+    background-color: red;
+    transform: rotate(0deg);
+  }
+  to {
+    left: 15%;
+    background-color: #fff;
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 900px) {
+  a.volver {
+    z-index: 2;
+    position: relative;
+    margin-left: 1em;
+    margin-top: 1em;
+    display: inline-block;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 0.4em 0.4em 0.4em 2em;
+    background-image: url(Imágenes/icons8-back-arrow-30.png);
+    background-repeat: no-repeat;
+    background-position: 0.1em;
+  }
+  a.volver:hover {
+    color: red;
+  }
+  a.volver:active {
+    transform: scale(0.9, 0.9);
+  }
+  .contenedor {
+    position: relative;
+    width: 70%;
+    max-width: 1000px;
+    min-height: 680px;
+    background-color: #fff;
+    left: 15%;
+    right: 15%;
+    top: -2em;
+    border-radius: 10px;
+    padding: 1em 2em 1em 2em;
+    animation-name: aparecersmall;
+    animation-duration: 4s;
+  }
+  input {
+    padding: 0.6em;
+    margin: 0.3em 0 1.3em 0;
+    width: 95%;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border: 1px solid black;
+    outline: none;
+  }
+  select {
+    padding: 0.6em;
+    margin: 0.3em 0 1.5em 0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border: 1px solid black;
+    outline: none;
+  }
+  label {
+    font-size: 1.2em;
+    font-weight: 550;
+    color: rgb(93, 0, 0);
+  }
+  div.check {
+    background-color: #ccc;
+    padding: 1em 1em 0 1em;
+    margin-bottom: 1.3em;
+    border-radius: 10px;
+    border: none;
+  }
+  input[type='checkbox'] {
+    width: auto;
+    margin-right: 1em;
+  }
+  input[type='submit'] {
+    float: right;
+    padding: 0.7em;
+    background-color: #04aa6d;
+    border: none;
+    width: 30%;
+    color: white;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  input[type='reset'] {
+    float: left;
+    padding: 0.7em;
+    background-color: #ff3733;
+    border: none;
+    width: 30%;
+    color: white;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  input[type='submit']:hover {
+    background-color: #05794f;
+  }
+  input[type='reset']:hover {
+    background-color: red;
+  }
+  input[type='submit']:active,
+  input[type='reset']:active {
+    box-shadow: none;
+    transform: scale(0.9, 0.9);
+  }
+  input[type='text']:focus,
+  input[type='date']:focus,
+  input[type='email']:focus,
+  input[type='password']:focus,
+  select:focus {
+    animation-name: borde;
+    animation-duration: 0.3s;
+    border: 1px dashed red;
+  }
+  input[type='text']:hover,
+  input[type='date']:hover,
+  input[type='email']:hover,
+  input[type='password']:hover,
+  select:hover {
+    background-color: #fab9b9;
+  }
+  /*Animación para que cuando se clique sobre un imput aparezca un borde*/
+  @keyframes borde {
+    from {
+      border: 1px solid black;
+    }
+    to {
+      border: 1px dashed red;
+    }
+  }
+  p a {
+    color: red;
+    text-decoration: none;
+  }
+  p a:hover {
+    text-decoration: underline;
+  }
+  /*Esto lo he buscado en stack overflow. Lo que pasaba es que cuando el formulario autocompletaba uno de los campos
+    cambiaba el color de fondo del input*/
+  input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+  input:-webkit-autofill:hover {
+    -webkit-box-shadow: 0 0 0px 1000px whitesmoke inset;
+  }
+}
