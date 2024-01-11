@@ -243,17 +243,17 @@ de un ancho del 66.66% y la columna de la derecha un ancho de 25%*/
   padding: 1em 0em 1em 4em;
 }
 p.twitter {
-  background-image: url(Imágenes/icons8-twitter.gif);
+  background-image: url(../../Imágenes/icons8-twitter.gif);
   background-repeat: no-repeat;
   background-position: 0.5em;
 }
 p.youtube {
-  background-image: url(Imágenes/icons8-youtube-40.png);
+  background-image: url(../../Imágenes/icons8-youtube-40.png);
   background-repeat: no-repeat;
   background-position: 0.5em;
 }
 p.instagram {
-  background-image: url(Imágenes/icons8-instagram-40.png);
+  background-image: url(../../Imágenes/icons8-instagram-40.png);
   background-repeat: no-repeat;
   background-position: 0.5em;
 }
@@ -320,7 +320,7 @@ ya que el ancho está determinado por porcentaje, por lo que al disminuir el anc
 Las filas impares son de color rojo y las pares de color negro.*/
 div.contenidoPartidos {
   padding-top: 9em;
-  background-image: url(Imágenes/estadio3.jpg), url(Imágenes/equipo.jpeg);
+  background-image: url(../../Imágenes/estadio3.jpg), url(../../Imágenes/equipo.jpeg);
   background-repeat: no-repeat, no-repeat;
   background-position: 0em 0em, -8em 45em;
 }
@@ -460,7 +460,7 @@ div.galeriatienda img.detras:hover {
   }
   #sidebar a:hover,
   #sidebar_ti a:hover {
-    background-image: url(Imágenes/icons8-vertical-line-40.png);
+    background-image: url(../../Imágenes/icons8-vertical-line-40.png);
     background-repeat: no-repeat;
     background-position: 0.1em;
   }
@@ -470,7 +470,7 @@ div.galeriatienda img.detras:hover {
   }
   #menu-btn,
   #menu-btn-ti {
-    background-image: url(Imágenes/icons8-menu-rounded-32.png);
+    background-image: url(../../Imágenes/icons8-menu-rounded-32.png);
     background-repeat: no-repeat;
     background-position: 80%;
     display: block;
@@ -496,7 +496,7 @@ div.galeriatienda img.detras:hover {
   }
   #menu-toggle:checked ~ #menu-btn,
   #menu-toggle_ti:checked ~ #menu-btn-ti {
-    background-image: url(Imágenes/icons8-back-arrow-32.png);
+    background-image: url(../../Imágenes/icons8-back-arrow-32.png);
     background-repeat: no-repeat;
     background-position: 80%;
   }
@@ -560,7 +560,7 @@ también hay que darle estilo cuando la pantalla es más ancha de 900px. Lo úni
     margin-top: 2em;
   }
   #sidebar_ti a:hover {
-    background-image: url(Imágenes/icons8-vertical-line-40.png);
+    background-image: url(../../Imágenes/icons8-vertical-line-40.png);
     background-repeat: no-repeat;
     background-position: 0.1em;
   }
@@ -568,7 +568,7 @@ también hay que darle estilo cuando la pantalla es más ancha de 900px. Lo úni
     transform: scale(0.95, 0.95);
   }
   #menu-btn-ti {
-    background-image: url(Imágenes/icons8-menu-rounded-32.png);
+    background-image: url(../../Imágenes/icons8-menu-rounded-32.png);
     background-repeat: no-repeat;
     background-position: 13em;
     display: block;
@@ -590,7 +590,7 @@ también hay que darle estilo cuando la pantalla es más ancha de 900px. Lo úni
     transform: translateX(7em);
   }
   #menu-toggle_ti:checked ~ #menu-btn-ti {
-    background-image: url(Imágenes/icons8-back-arrow-32.png);
+    background-image: url(../../Imágenes/icons8-back-arrow-32.png);
     background-repeat: no-repeat;
     background-position: 13em;
   }
