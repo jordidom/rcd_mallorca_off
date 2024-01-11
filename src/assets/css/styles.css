@@ -176,7 +176,7 @@ header {
 de un ancho del 66.66% y la columna de la derecha un ancho de 25%*/
 .contenido {
   display: flex;
-  margin: 5em 5em 0em 8em;
+  margin: 0em 5em 0em 8em;
   flex-direction: row;
 }
 .principal {
