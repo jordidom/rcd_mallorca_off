@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="shortcut icon" href="Imágenes/escudo.ico" type="image/vnd.microsoft.icon" />
+    <title>Calendario Partidos</title>
+</head>
+<body>
+    <!--ENCABEZADO-->
+    <header class="col-12">
+        <img src="assets/img/logo/logo-mallorca.png" alt="imagen logo mallorca" />
+        <div class="bothead">
+            <a href="galeriaTienda.html" class="tienda">Tienda</a>
+            <a href="formularioSocios.html" class="socio">Quiero ser abonado</a>
+        </div>
+    </header>
+
+    <!--MENÚ HORIZONTAL FIJO EN LA PARTE SUPERIOR-->
+    <div class="navbar">
+        <ul>
+            <li class="drop">
+                <a href="index.html" class="dropbtn">RCDMallorca</a>
+                <div class="drop-content">
+                    <a href="#historia">Nuestra historia</a>
+                    <a href="#instalaciones">Instalaciones</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </li>
+            <li class="drop">
+                <a href="galeriaJugadores.html" class="dropbtn">Plantilla</a>
+                <div class="drop-content">
+                    <a href="#entrenador">Entrenador</a>
+                    <a href="#porteros">Porteros</a>
+                    <a href="#defensas">Defensas</a>
+                    <a href="#mediocentros">Centrocampistas</a>
+                    <a href="#delanteros">Delanteros</a>
+                </div>
+            </li>
+            <li class="drop">
+                <a href="horarioPartidos.html" class="dropbtn">Partidos</a>
+                <div class="drop-content">
+                    <a href="#">Temporada</a>
+                    <a href="#">Clasificación</a>
+                </div>
+            </li>
+            <li class="drop">
+                <a href="#" class="dropbtn">FútbolBase</a>
+                <div class="drop-content">
+                    <a href="#">Mallorca B</a>
+                    <a href="#">Juveniles</a>
+                    <a href="#">Cadetes</a>
+                    <a href="#">Infantiles</a>
+                    <a href="#">Alevines</a>
+                </div>
+            </li>
+            <li class="drop"><a href="#">Noticias</a></li>
+            <div class="botnav">
+                <a href="galeriaTienda.html" class="tienda">Tienda</a>
+                <a href="formularioSocios.html" class="socio">Quiero ser abonado</a>
+            </div>
+        </ul>
+    </div>
+
+    <!--MENÚ LATERAL DESPLEGABLE (en este archivo solo aparece cuando el tamaño de la pantalla se reduce)-->
+    <div class="menulat">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="menu-btn"><p>Botón</p></label>
+  
+        <nav id="sidebar">
+            <a href="index.html" class="first">Inicio</a>
+            <a href="horarioPartidos.html">Partidos</a>
+            <a href="galeriaJugadores.html">Plantilla</a>
+            <a href="#">Futbol base</a>
+            <a href="#">Noticias</a>
+        </nav>
+    </div>
+
+    <!--DIVISOR DONDE SE ENCUENTRA EL CONTENIDO (la tabla)-->
+    <div class="contenidoPartidos">
+        <h1 style="margin-left: 5em">Partidos temporada 2022/2023</h1>
+        <div style="overflow-x: auto">
+            <table class="partidos">
+                <tr>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Equipo Local</th>
+                    <th>Equipo Visitante</th>
+                    <th>Resultado</th>
+                    <th>Competición</th>
+                </tr>
+                <tr>
+                    <td>15-08-2022</td>
+                    <td>17:30</td>
+                    <td>Athletic Club</td>
+                    <td>Mallorca</td>
+                    <td>0-0</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>20-08-2022</td>
+                    <td>19:30</td>
+                    <td>Mallorca</td>
+                    <td>Real Betis</td>
+                    <td>1-2</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>27-08-2022</td>
+                    <td>19:30</td>
+                    <td>Rayo Vallecano</td>
+                    <td>Mallorca</td>
+                    <td>0-2</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>03-09-2022</td>
+                    <td>14:00</td>
+                    <td>Mallorca</td>
+                    <td>Girona</td>
+                    <td>1-1</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>11-09-2022</td>
+                    <td>14:00</td>
+                     <td>Real Madrid</td>
+                    <td>Mallorca</td>
+                    <td>4-1</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>17-09-2022</td>
+                    <td>14:00</td>
+                    <td>Mallorca</td>
+                    <td>Almeria</td>
+                    <td>1-0</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>01-10-2022</td>
+                    <td>21:00</td>
+                    <td>Mallorca</td>
+                    <td>Barcelona</td>
+                    <td>0-1</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>10-10-2022</td>
+                    <td>21:30</td>
+                    <td>Elche</td>
+                    <td>Mallorca</td>
+                    <td>1-1</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>15-10-2022</td>
+                    <td>18:30</td>
+                    <td>Mallorca</td>
+                    <td>Sevilla</td>
+                    <td>0-1</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>19-10-2022</td>
+                    <td>20:00</td>
+                    <td>Real Sociedad</td>
+                    <td>Mallorca</td>
+                    <td>1-0</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>22-10-2022</td>
+                    <td>18:30</td>
+                    <td>Valencia</td>
+                    <td>Mallorca</td>
+                    <td>1-2</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>28-10-2022</td>
+                    <td>21:00</td>
+                    <td>Mallorca</td>
+                    <td>Espanyol</td>
+                    <td>1-1</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>06-11-2022</td>
+                    <td>18:30</td>
+                    <td>Villarreal</td>
+                    <td>Mallorca</td>
+                    <td>0-2</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>09-11-2022</td>
+                    <td>21:30</td>
+                    <td>Mallorca</td>
+                    <td>Atlético de Madrid</td>
+                    <td>1-0</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>12-11-2022</td>
+                    <td>18:30</td>
+                    <td>CD Autol</td>
+                    <td>Mallorca</td>
+                    <td>0-6</td>
+                    <td>Copa del Rey</td>
+                </tr>
+                <tr>
+                    <td>16-11-2022</td>
+                    <td>18:00</td>
+                    <td>Poblense</td>
+                    <td>Mallorca</td>
+                    <td>1-4</td>
+                    <td>Amistoso</td>
+                </tr>
+                <tr>
+                    <td>10-12-2022</td>
+                    <td>12:30</td>
+                    <td>Mallorca</td>
+                    <td>Mainz</td>
+                    <td>2-2</td>
+                    <td>Amistoso</td>
+                </tr>
+                <tr>
+                    <td>14-12-2022</td>
+                    <td>18:00</td>
+                    <td>Mallorca</td>
+                    <td>Bologna</td>
+                    <td>1-2</td>
+                    <td>Amistoso</td>
+                </tr>
+                <tr>
+                    <td>20-12-2022</td>
+                    <td>21:00</td>
+                    <td>Real Union</td>
+                    <td>Mallorca</td>
+                    <td>0-1</td>
+                    <td>Copa del Rey</td>
+                </tr>
+                <tr>
+                    <td>30-12-2022</td>
+                    <td>17:00</td>
+                    <td>Getafe</td>
+                    <td>Mallorca</td>
+                    <td>2-0</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>04-01-2023</td>
+                    <td>19:00</td>
+                    <td>Pontevedra</td>
+                    <td>Mallorca</td>
+                    <td>0-2</td>
+                    <td>Copa del Rey</td>
+                </tr>
+                <tr>
+                    <td>07-01-2023</td>
+                    <td>18:30</td>
+                    <td>Mallorca</td>
+                    <td>Real Valladolid</td>
+                    <td>1-0</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>14-01-2023</td>
+                    <td>18:30</td>
+                    <td>Osasuna</td>
+                    <td>Mallorca</td>
+                    <td>1-0</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>17-01-2023</td>
+                    <td>19:00</td>
+                    <td>Real Sociedad</td>
+                    <td>Mallorca</td>
+                    <td>1-0</td>
+                    <td>Copa del Rey</td>
+                </tr>
+                <tr>
+                    <td>20-01-2023</td>
+                    <td>21:00</td>
+                    <td>Mallorca</td>
+                    <td>Celta de Vigo</td>
+                    <td>1-0</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>28-01-2023</td>
+                    <td>14:00</td>
+                    <td>Cadiz</td>
+                    <td>Mallorca</td>
+                    <td>2-0</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>05-02-2023</td>
+                    <td>14:00</td>
+                    <td>Mallorca</td>
+                    <td>Real Madrid</td>
+                    <td>1-0</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>11-02-2023</td>
+                    <td>18:30</td>
+                    <td>Sevilla</td>
+                    <td>Mallorca</td>
+                    <td>2-0</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>18-02-2023</td>
+                    <td>18:30</td>
+                    <td>Mallorca</td>
+                    <td>Villarreal</td>
+                    <td>4-2</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>25-02-2023</td>
+                    <td>14:00</td>
+                    <td>Espanyol</td>
+                    <td>Mallorca</td>
+                    <td>2-1</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>04-03-2023</td>
+                    <td>18:30</td>
+                    <td>Mallorca</td>
+                    <td>Elche</td>
+                    <td>0-1</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>12-03-2023</td>
+                    <td>14:00</td>
+                    <td>Mallorca</td>
+                    <td>Real Sociedad</td>
+                    <td>1-1</td>
+                    <td>LaLiga</td>
+                </tr>
+                <tr>
+                    <td>19-03-2023</td>
+                    <td>14:00</td>
+                    <td>Real Betis</td>
+                    <td>Mallorca</td>
+                    <td>?-?</td>
+                    <td>LaLiga</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

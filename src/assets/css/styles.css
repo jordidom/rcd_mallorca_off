@@ -109,6 +109,7 @@ div.botnav a.tienda {
   background-repeat: no-repeat;
   background-position: 0.2em;
   padding-left: 1.8em;
+  margin-left: 30em;
 }
 div.botnav a.tienda:hover {
   background-image: url(../img/carrito\ ng.png);
@@ -116,6 +117,11 @@ div.botnav a.tienda:hover {
   background-position: 0.2em;
 }
 div.botnav a.socio {
+  margin-left: 20em;
+  background-image: url(../img/dimonio-socio.png);
+  background-repeat: no-repeat;
+  background-position: 0.2em;
+  padding-left: 1.8em;
   margin-left: 2em;
 }
 div.bothead {

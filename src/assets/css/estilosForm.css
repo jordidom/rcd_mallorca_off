@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: red;
-  background-image: url(Imágenes/aficion.jpg), url(Imágenes/dimonioreal.jpg);
+  background-image: url(../../Imágenes/aficion.jpg), url(../../Imágenes/dimonioreal.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: -25em 0em, 35em 0em;
 }
@@ -23,7 +23,7 @@ a.volver {
   background-color: black;
   border-radius: 5px;
   padding: 0.4em 0.4em 0.4em 2em;
-  background-image: url(Imágenes/icons8-back-arrow-30.png);
+  background-image: url(../../Imágenes/icons8-back-arrow-30.png);
   background-repeat: no-repeat;
   background-position: 0.1em;
 }
@@ -196,7 +196,7 @@ cambiaba el color de fondo del input*/
     background-color: black;
     border-radius: 10px;
     padding: 0.4em 0.4em 0.4em 2em;
-    background-image: url(Imágenes/icons8-back-arrow-30.png);
+    background-image: url(../../Imágenes/icons8-back-arrow-30.png);
     background-repeat: no-repeat;
     background-position: 0.1em;
   }
