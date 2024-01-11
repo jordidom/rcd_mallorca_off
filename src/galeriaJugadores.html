@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="shortcut icon" href="Imágenes/escudo.ico" type="image/vnd.microsoft.icon" />
+    <title>Plantilla</title>
+</head>
+<body style="background-color: #c1c1c1">
+    <!--ENCABEZADO-->
+    <header class="col-12">
+		<img src="assets/img/logo/logo-mallorca.png" alt="imagen logo mallorca" />
+		<div class="bothead">
+		  	<a href="galeriaTienda.html" class="tienda">Tienda</a>
+		  	<a href="formularioSocios.html" class="socio">Quiero ser abonado</a>
+		</div>
+	</header>
+  
+	<!--MENÚ HORIZONTAL FIJO EN LA PARTE SUPERIOR-->
+	<div class="navbar">
+		<ul>
+		  	<li class="drop">
+				<a href="index.html" class="dropbtn" ;>RCDMallorca</a>
+				<div class="drop-content">
+			  		<a href="#historia">Nuestra historia</a>
+			  		<a href="#instalaciones">Instalaciones</a>
+			  		<a href="#contacto">Contacto</a>
+				</div>
+		  	</li>
+		  	<li class="drop">
+				<a href="galeriaJugadores.html" class="dropbtn">Plantilla</a>
+				<div class="drop-content">
+			  		<a href="#entrenador">Entrenador</a>
+			  		<a href="#porteros">Porteros</a>
+			  		<a href="#defensas">Defensas</a>
+			  		<a href="#mediocentros">Centrocampistas</a>
+			  		<a href="#delanteros">Delanteros</a>
+				</div>
+		  	</li>
+		  	<li class="drop">
+				<a href="HorariosPartidos.html" class="dropbtn">Partidos</a>
+				<div class="drop-content">
+			  		<a href="#">Temporada</a>
+			  		<a href="#">Clasificación</a>
+				</div>
+		  	</li>
+		  	<li class="drop">
+				<a href="#" class="dropbtn">FútbolBase</a>
+				<div class="drop-content">
+			  		<a href="#">Mallorca B</a>
+			  		<a href="#">Juveniles</a>
+			  		<a href="#">Cadetes</a>
+			  		<a href="#">Infantiles</a>
+			  		<a href="#">Alevines</a>
+				</div>
+		  	</li>
+		  	<li class="drop"><a href="#">Noticias</a></li>
+		  	<div class="botnav">
+				<a href="galeriaTienda.html" class="tienda">Tienda</a>
+				<a href="formularioSocios.html" class="socio">Quiero ser abonado</a>
+		  	</div>
+		</ul>
+	</div>
+
+	<!--MENÚ LATERAL DESPLEGABLE (en este archivo solo aparece cuando el tamaño de la pantalla se reduce)-->
+    <div class="menulat">
+		<input type="checkbox" id="menu-toggle" />
+		<label for="menu-toggle" id="menu-btn"><p>Botón</p></label>
+  
+		<nav id="sidebar">
+		  	<a href="index.html" class="first">Inicio</a>
+		  	<a href="#historia">Nuestra Historia</a>
+		  	<a href="#instalaciones">Instalaciones</a>
+		  	<a href="#contacto">Contacto</a>
+		  	<a href="HorariosPartidos.html">Partidos</a>
+		  	<a href="galeriaJugadores.html">Plantilla</a>
+		</nav>
+	</div>
+
+    <!--DIVISOR DONDE SE ENCUENTRA EL CONTENIDO (dividido en diferentes divisores y cada uno dividido en div.galeria)-->
+    <div class="contenidoGJ">
+        <h2 id="entrenador">Entrenador</h2>
+        <div class="galeria">
+            <img src="Imágenes/Jugadores/aguirre.png" alt="aguirre" />
+            <div class="desc" style="background-color: black">
+                <p><strong>Nombre: </strong>Javier Aguirre</p>
+                <p
+                    style="
+                    background-image: url(Imágenes/Banderas/mexico.png);
+                    background-repeat: no-repeat;
+                    background-position: 10.5em;
+                    ">
+                <strong>Nacionalidad: </strong>México
+                </p>
+                <p><strong>Edad: </strong>64 años</p>
+            </div>
+        </div>
+        <div style="clear: both; padding-top: 3em">
+            <h2 id="porteros">Porteros</h2>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/rajkovic.png" alt="rajkovic" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Predrag Rajković</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/serbia.png);
+                        background-repeat: no-repeat;
+                        background-position: 10em;
+                        ">
+                        <strong>Nacionalidad: </strong>Serbia
+                    </p>
+                    <p><strong>Edad: </strong>27 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/greif.png" alt="greif" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Dominik Greif</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/eslovaquia.png);
+                        background-repeat: no-repeat;
+                        background-position: 12em;
+                        ">
+                        <strong>Nacionalidad: </strong>Eslovaquia
+                    </p>
+                    <p><strong>Edad: </strong>25 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/leo.png" alt="leo" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Leo Román</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/spain.png);
+                        background-repeat: no-repeat;
+                        background-position: 11em;
+                        ">
+                        <strong>Nacionalidad: </strong>España
+                    </p>
+                    <p><strong>Edad: </strong>22 años</p>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both; padding-top: 3em">
+            <h2 id="defensas">Defensas</h2>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/raillo.png" alt="raillo" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Antonio Raillo</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/spain.png);
+                        background-repeat: no-repeat;
+                        background-position: 10.5em;
+                        ">
+                        <strong>Nacionalidad: </strong>España
+                    </p>
+                    <p><strong>Edad: </strong>31 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/augustinsson.png" alt="augustinsson" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Ludwig Augustinsson</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/suecia.png);
+                        background-repeat: no-repeat;
+                        background-position: 10.5em;
+                        ">
+                        <strong>Nacionalidad: </strong>Suecia
+                    </p>
+                    <p><strong>Edad: </strong>28 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/natasic.png" alt="natasic" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Matija Nastasic</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/serbia.png);
+                        background-repeat: no-repeat;
+                        background-position: 10.5em;
+                        ">
+                        <strong>Nacionalidad: </strong>Serbia
+                    </p>
+                    <p><strong>Edad: </strong>29 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/valjent.png" alt="valjent" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Martin Valjent</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/eslovaquia.png);
+                        background-repeat: no-repeat;
+                        background-position: 12em;
+                        ">
+                        <strong>Nacionalidad: </strong>Eslovaquia
+                    </p>
+                    <p><strong>Edad: </strong>27 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/maffeo.png" alt="maffeo" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Pablo Maffeo</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/spain.png);
+                        background-repeat: no-repeat;
+                        background-position: 10.5em;
+                        ">
+                        <strong>Nacionalidad: </strong>España
+                    </p>
+                    <p><strong>Edad: </strong>25 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/costa.png" alt="costa" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Jaume Costa</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/spain.png);
+                        background-repeat: no-repeat;
+                        background-position: 10.5em;
+                        ">
+                        <strong>Nacionalidad: </strong>España
+                    </p>
+                    <p><strong>Edad: </strong>34 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/giovanni.png" alt="giovanni" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Giovanni González</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/uruguay.png);
+                        background-repeat: no-repeat;
+                        background-position: 11.5em;
+                        ">
+                        <strong>Nacionalidad: </strong>Uruguay
+                    </p>
+                    <p><strong>Edad: </strong>28 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+            <img src="Imágenes/Jugadores/copete.png" alt="copete" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>José Manuel Copete</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/spain.png);
+                        background-repeat: no-repeat;
+                        background-position: 10.5em;
+                        ">
+                        <strong>Nacionalidad: </strong>España
+                    </p>
+                    <p><strong>Edad: </strong>23 años</p>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both; padding-top: 3em">
+            <h2 id="mediocentros">Centrocampistas</h2>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/galarreta.png" alt="galarreta" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Iñigo Ruiz de Galarreta</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/spain.png);
+                        background-repeat: no-repeat;
+                        background-position: 10.5em;
+                        ">
+                        <strong>Nacionalidad: </strong>España
+                    </p>
+                    <p><strong>Edad: </strong>29 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/grenier.png" alt="grenier" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Clément Grenier</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/francia.png);
+                        background-repeat: no-repeat;
+                        background-position: 11em;
+                        ">
+                        <strong>Nacionalidad: </strong>Francia
+                    </p>
+                    <p><strong>Edad: </strong>32 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/antonio.png" alt="antonio" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Antonio Sánchez</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/spain.png);
+                        background-repeat: no-repeat;
+                        background-position: 11em;
+                        ">
+                        <strong>Nacionalidad: </strong>España
+                    </p>
+                    <p><strong>Edad: </strong>25 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/dani.png" alt="dani" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Dani Rodriguez</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/spain.png);
+                        background-repeat: no-repeat;
+                        background-position: 11em;
+                        ">
+                        <strong>Nacionalidad: </strong>España
+                    </p>
+                    <p><strong>Edad: </strong>34 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/morlanes.png" alt="morlanes" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Manu Morlanes</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/spain.png);
+                        background-repeat: no-repeat;
+                        background-position: 11em;
+                        ">
+                        <strong>Nacionalidad: </strong>España
+                    </p>
+                    <p><strong>Edad: </strong>24 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/baba.png" alt="baba" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Idrissu Baba</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/ghana.png);
+                        background-repeat: no-repeat;
+                        background-position: 10.5em;
+                        ">
+                        <strong>Nacionalidad: </strong>Ghana
+                    </p>
+                    <p><strong>Edad: </strong>27 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/battaglia.png" alt="battaglia" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Rodrigo Battaglia</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/argentina.png);
+                        background-repeat: no-repeat;
+                        background-position: 12em;
+                        ">
+                        <strong>Nacionalidad: </strong>Argentina
+                    </p>
+                    <p><strong>Edad: </strong>31 años</p>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both; padding-top: 3em">
+            <h2 id="delanteros">Delanteros</h2>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/muriqui.png" alt="muriqui" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Vedat Muriqui</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/kosovo.png);
+                        background-repeat: no-repeat;
+                        background-position: 10.5em;
+                        ">
+                        <strong>Nacionalidad: </strong>Kosovo
+                    </p>
+                    <p><strong>Edad: </strong>28 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/abdon.png" alt="abdon" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Abdon Prats</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/spain.png);
+                        background-repeat: no-repeat;
+                        background-position: 10.5em;
+                        ">
+                        <strong>Nacionalidad: </strong>España
+                    </p>
+                    <p><strong>Edad: </strong>30 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/kadewere.png" alt="kadewere" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Tino Kadewere</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/zimbawe.png);
+                        background-repeat: no-repeat;
+                        background-position: 11.5em;
+                        ">
+                        <strong>Nacionalidad: </strong>Zimbawe
+                    </p>
+                    <p><strong>Edad: </strong>27 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/lee.png" alt="kang in lee" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Kang-in Lee</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/corea.png);
+                        background-repeat: no-repeat;
+                        background-position: 10.5em;
+                        ">
+                        <strong>Nacionalidad: </strong>Corea
+                    </p>
+                    <p><strong>Edad: </strong>22 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/angel.png" alt="angel" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Ángel Rodriguez</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/spain.png);
+                        background-repeat: no-repeat;
+                        background-position: 10.5em;
+                        ">
+                        <strong>Nacionalidad: </strong>España
+                    </p>
+                    <p><strong>Edad: </strong>35 años</p>
+                </div>
+            </div>
+            <div class="galeria">
+                <img src="Imágenes/Jugadores/ndiaye.png" alt="ndiaye" />
+                <div class="desc" style="background-color: black">
+                    <p><strong>Nombre: </strong>Amath Ndiaye</p>
+                    <p
+                        style="
+                        background-image: url(Imágenes/Banderas/senegal.png);
+                        background-repeat: no-repeat;
+                        background-position: 11em;
+                        ">
+                        <strong>Nacionalidad: </strong>Senegal
+                    </p>
+                    <p><strong>Edad: </strong>26 años</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

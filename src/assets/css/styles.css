@@ -176,7 +176,7 @@ header {
 de un ancho del 66.66% y la columna de la derecha un ancho de 25%*/
 .contenido {
   display: flex;
-  margin: 0em 5em 0em 8em;
+  margin: 5em 5em 0em 8em;
   flex-direction: row;
 }
 .principal {
@@ -416,6 +416,12 @@ div.galeriatienda img.detras:hover {
 
 /*Estilos para cuando el ancho de la pantalla es inferior a 900px*/
 @media only screen and (max-width: 900px) {
+  .contenido {
+    font-size: 0.7em;
+    display: flex;
+    margin: 5em 5em 2em 8em;
+    flex-direction: column;
+  }
   /*El menú horizontal fijo de la parte superior desaparece*/
   .navbar {
     display: none;
